@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: subbuvemulapipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: subbuvemulapipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: subbuvemulapipelinesjavascriptdocker 
+          image: firstregistryforaks.azurecr.io/subbuvemulapipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
